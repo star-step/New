@@ -1,0 +1,240 @@
+ h1 {
+    font-family:'Gabriola', serif;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-family:'Cambria', serif;
+    font-size: 1.5em;
+}
+input[type=radio] {
+    border: 0px;
+    width: 20px;
+    height: 2em;
+}
+p {
+    font-family:'Gabriola', serif;
+}
+
+@-webkit-keyframes fadeBounce {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    
+    40% {
+        transform: translateY(0);
+    }
+    
+    55% {
+        transform: translateY(-6px);
+    }
+    
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    85% {
+        transform: translateY(-3px);
+    }
+        
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+
+@keyframes fadeBounce {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    
+    40% {
+        transform: translateY(0);
+    }
+    
+    55% {
+        transform: translateY(-6px);
+    }
+    
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    85% {
+        transform: translateY(-3px);
+    }
+        
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+.container {
+    opacity: 0;
+    animation: fadeBounce 1.5s forwards;
+    -webkit-animation: fadeBounce 1.5s forwards;
+}
+
+.container :nth-child(2) .card {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.container :nth-child(3) .card {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.container :nth-child(4) .card {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.card-container {
+  height: 50px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+  background-color: #3FEEE6; 
+}
+
+.card {
+  height: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 82.3%;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .quizContainer {
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+    padding-top: 5px;
+    /*-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;*/
+    position: relative;
+}
+
+#quiz1
+{
+color: : rgb(120, 120, 120);
+font-family:"Georgia", Arial, sans-serif;
+}
+.nextButton {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+	font-size:20px;
+	font-weight:bold;
+    padding-top: 5px;
+	float:right;
+	right:30%;
+}
+
+.previButton {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: lightgrey;
+    font-family:'Gabriola', serif;
+    position: relative;
+    margin: auto;
+    font-size:25px;
+    font-weight:bold;
+    padding-top: 5px;
+    float:left;
+    left:30%;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+}
+
+.submit {
+    margin-left: 10px;
+}
+
+.question {
+    font-family:'Century', serif;
+    font-size: 1.5em;
+	font-weight:bold;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #49adb6;
+    text-align: center;
+}
+.quizMessage {
+    border-radius: 15px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+	font-size:20px;
+    font-family: serif;
+    color: black;
+	position:absolute;
+	top:80%;
+	left:40%;
+}
+.choiceList {
+    font-family: 'Arial', serif;
+    color: #c5e4e3;
+	font-size:15px;
+	font-weight:bold;
+}
+.result {
+    width: 40%;
+    height: auto;
+    border-radius: 6px;
+    background-color: linen;
+    margin: auto;
+	color:green;
+    text-align: center;
+	font-size:25px;
+    font-family:'Verdana', serif;
+	font-weight:bold;
+	position:absolute;
+	top:80%;
+	left:30%;
+}
+/* End of Quiz Classes */
